@@ -37,7 +37,7 @@ function calculate() {
         expression = expression.replace(/π/g, Math.PI).replace(/e/g, Math.E);
 
         // Check for shortcuts
-        if (expression === '❤') {
+        if (expression === '19') {
             openChatGPT();
             display.innerText = '0';
             return;
@@ -77,6 +77,10 @@ function showDeveloperInfo() {
 function customInfo() {
     alert("Open Source Acal1.0\nCommands:\n1. 2323 to see developer info\n2. 7789 to open Google\n3. ❤❤ to open AI\nCommands are triggered when '=' is pressed.");
 }
+function functionai() {
+    window.open("https://forms.gle/ovEJ5o3UxnfcVbwT6");
+}
+
 
 function showFunction() {
     const popup = document.createElement('div');
