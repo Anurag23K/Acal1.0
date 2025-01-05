@@ -102,3 +102,24 @@ function generateUserId() {
     const userId = 'User-' + Math.floor(Math.random() * 1000000);
     userIdElement.innerText = `Your Unique ID: ${userId}`;
 }
+
+// Radial menu for brackets
+function openBracketDial() {
+    const dial = document.createElement('div');
+    dial.className = 'dial';
+    dial.innerHTML = `
+        <button onclick="append('(')">(</button>
+        <button onclick="append(')')">)</button>
+        <button onclick="append('[')">[</button>
+        <button onclick="append(']')">]</button>
+        <button onclick="append('{')">{</button>
+        <button onclick="append('}')">}</button>
+        <button class='close-btn' onclick="closeDial(this)">Close</button>
+    `;
+    document.body.appendChild(dial);
+}
+
+function closeDial(button) {
+    const dial = button.parentElement;
+    document.body.removeChild(dial);
+}
