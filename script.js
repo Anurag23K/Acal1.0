@@ -71,11 +71,11 @@ function openGoogle() {
 }
 
 function showDeveloperInfo() {
-    alert("Developer: Anurag Kumar Pal\nGithub: Anurag23K\nVersion: 1.0");
+    alert("Developer: Anurag Kumar Pal\nGithub: Anurag23K\nVersion: 1.0\n To Rate Us 🎐😎 Login with Google");
 }
 
 function customInfo() {
-    alert("Open Source Acal1.0\nCommands:\n1. 2323 to see developer info\n2. 7789 to open Google\n3. ❤❤ to open AI\nCommands are triggered when '=' is pressed.");
+    alert("Open Source Acal1.0\nCommands:\n1. 2323 to see developer info\n2. 7789 to open Google\n3. 19 for open AI\nCommands are triggered when '=' is pressed.");
 }
 function functionai() {
     window.open("https://forms.gle/ovEJ5o3UxnfcVbwT6");
