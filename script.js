@@ -37,7 +37,7 @@ function calculate() {
         expression = expression.replace(/π/g, Math.PI).replace(/e/g, Math.E);
 
         // Check for shortcuts
-        if (expression === '❤️❤️') {
+        if (expression === '❤❤') {
             openChatGPT();
             display.innerText = '0';
             return;
@@ -49,12 +49,12 @@ function calculate() {
             showDeveloperInfo();
             display.innerText = '0';
             return;
-       } else if (expression === '23') {
-           custom();
+        } else if (expression === '23') {
+            customInfo();
             display.innerText = '0';
             return;
         }
-          
+
         // Calculate the expression
         display.innerText = eval(expression.replace('÷', '/').replace('×', '*'));
     } catch {
@@ -71,11 +71,33 @@ function openGoogle() {
 }
 
 function showDeveloperInfo() {
-    alert("Developer: Anurag Kumar Pal\nGithub; Anurag23K\nVersion: 1.0");
+    alert("Developer: Anurag Kumar Pal\nGithub: Anurag23K\nVersion: 1.0");
 }
-function custom() {
-    alert("Open Source Acal1.0 \n 1. 2323 to see devloper\n2.7789 to Open Chrome\n3.❤❤ use to Ai \n these command work when = excute \n more comming server delay...");
+
+function customInfo() {
+    alert("Open Source Acal1.0\nCommands:\n1. 2323 to see developer info\n2. 7789 to open Google\n3. ❤❤ to open AI\nCommands are triggered when '=' is pressed.");
 }
+
+function showFunctionCodes() {
+    const popup = document.createElement('div');
+    popup.className = 'popup';
+    popup.innerHTML = `
+        <h2>Available Functions</h2>
+        <p>sin(x), cos(x), tan(x)</p>
+        <p>asin(x), acos(x), atan(x)</p>
+        <p>π (Math.PI), e (Math.E)</p>
+        <p>+ - × ÷</p>
+        <button class='close-btn' onclick='closePopup(this)'>Close</button>
+    `;
+    document.body.appendChild(popup);
+    popup.style.display = 'block';
+}
+
+function closePopup(button) {
+    const popup = button.parentElement;
+    document.body.removeChild(popup);
+}
+
 function generateUserId() {
     const userId = 'User-' + Math.floor(Math.random() * 1000000);
     userIdElement.innerText = `Your Unique ID: ${userId}`;
