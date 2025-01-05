@@ -49,8 +49,12 @@ function calculate() {
             showDeveloperInfo();
             display.innerText = '0';
             return;
+       } else if (expression === '2.0') {
+           custom();
+            display.innerText = '0';
+            return;
         }
-
+          
         // Calculate the expression
         display.innerText = eval(expression.replace('÷', '/').replace('×', '*'));
     } catch {
@@ -67,9 +71,11 @@ function openGoogle() {
 }
 
 function showDeveloperInfo() {
-    alert("Developer: Your Name\nContact: your.email@example.com\nVersion: 1.0");
+    alert("Developer: Anurag Kumar Pal\nGithub; Anurag23K\nVersion: 1.0");
 }
-
+function custom() {
+    alert("you can customize this Acal");
+}
 function generateUserId() {
     const userId = 'User-' + Math.floor(Math.random() * 1000000);
     userIdElement.innerText = `Your Unique ID: ${userId}`;
