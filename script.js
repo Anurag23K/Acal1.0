@@ -37,7 +37,7 @@ function calculate() {
         expression = expression.replace(/π/g, Math.PI).replace(/e/g, Math.E);
 
         // Check for shortcuts
-        if (expression === '❤❤') {
+        if (expression === '❤') {
             openChatGPT();
             display.innerText = '0';
             return;
@@ -78,7 +78,7 @@ function customInfo() {
     alert("Open Source Acal1.0\nCommands:\n1. 2323 to see developer info\n2. 7789 to open Google\n3. ❤❤ to open AI\nCommands are triggered when '=' is pressed.");
 }
 
-function showFunctionCodes() {
+function showFunction() {
     const popup = document.createElement('div');
     popup.className = 'popup';
     popup.innerHTML = `
@@ -86,7 +86,7 @@ function showFunctionCodes() {
         <p>sin(x), cos(x), tan(x)</p>
         <p>asin(x), acos(x), atan(x)</p>
         <p>π (Math.PI), e (Math.E)</p>
-        <p>+ - × ÷</p>
+        <p>+ - × ÷ for more..23=use it</p>
         <button class='close-btn' onclick='closePopup(this)'>Close</button>
     `;
     document.body.appendChild(popup);
