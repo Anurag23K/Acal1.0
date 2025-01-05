@@ -12,39 +12,48 @@
         <p>Loading Calculator...</p>
         <p class="developer-name">Anurag Kumar Pal</p>
     </div>
-    
+
     <div id="calculator" class="calculator" style="display: none;">
         <div id="display" class="display">0</div>
         <div class="buttons">
             <button onclick="clearDisplay()">AC</button>
-            <button onclick="append('π')">π</button>
-            <button onclick="append('e')">e</button>
+            <button onclick="append('(')">(</button>
+            <button onclick="append(')')">)</button>
             <button onclick="deleteLast()">⌫</button>
+
+            <button onclick="append('[')">[</button>
+            <button onclick="append(']')">]</button>
+            <button onclick="append('{')">{</button>
+            <button onclick="append('}')">}</button>
 
             <button onclick="append('sin(')">sin</button>
             <button onclick="append('cos(')">cos</button>
             <button onclick="append('tan(')">tan</button>
             <button onclick="append('/')">÷</button>
 
+            <button onclick="append('asin(')">asin</button>
+            <button onclick="append('acos(')">acos</button>
+            <button onclick="append('atan(')">atan</button>
+            <button onclick="append('*')">×</button>
+
             <button onclick="append('7')">7</button>
             <button onclick="append('8')">8</button>
             <button onclick="append('9')">9</button>
-            <button onclick="append('*')">×</button>
+            <button onclick="append('-')">−</button>
 
             <button onclick="append('4')">4</button>
             <button onclick="append('5')">5</button>
             <button onclick="append('6')">6</button>
-            <button onclick="append('-')">−</button>
+            <button onclick="append('+')">+</button>
 
             <button onclick="append('1')">1</button>
             <button onclick="append('2')">2</button>
             <button onclick="append('3')">3</button>
-            <button onclick="append('+')">+</button>
+            <button onclick="calculate()">=</button>
 
             <button onclick="append('0')">0</button>
             <button onclick="append('.')">.</button>
-            <button onclick="append('❤️')">❤️</button>
-            <button onclick="calculate()">=</button>
+            <button onclick="showFunctionCodes()">Functions</button>
         </div>
         <div id="user-id" class="user-id"></div>
     </div>
