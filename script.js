@@ -74,7 +74,7 @@ function showDeveloperInfo() {
     alert("Developer: Anurag Kumar Pal\nGithub; Anurag23K\nVersion: 1.0");
 }
 function custom() {
-    alert("Open Source Acal1.0 \n 1. 2323 to see devloper/n2.7789 to Open Chrome\n3.❤❤ use to Ai \n these command work when = excute \n more comming server delay...");
+    alert("Open Source Acal1.0 \n 1. 2323 to see devloper\n2.7789 to Open Chrome\n3.❤❤ use to Ai \n these command work when = excute \n more comming server delay...");
 }
 function generateUserId() {
     const userId = 'User-' + Math.floor(Math.random() * 1000000);
