@@ -35,7 +35,7 @@ body, html {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: radial-gradient(at 30% 30%, #0000, #000a) red;
+  background: #000000;
   animation: l13-1 0.5s cubic-bezier(.5,-500,.5,500) infinite;
 }
 
