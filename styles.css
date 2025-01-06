@@ -22,20 +22,55 @@ body, html {
     font-style: italic;
 }
 
-.spinner {
-    width: 100px;
-    height: 150px;
-    border: 5px solid #ccc;
-    border-top: 5px solid #61dafb;
-    border-radius: 50%;
-    animation: spin 2s linear infinite;
+/* HTML: /* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  color: #514b82;
+  background: 
+    conic-gradient(from 90deg at 3px 3px,#0000 90deg,currentColor 0)
+    -3px -3px/calc(50% + 1.5px) calc(50% + 1.5px);
+  animation: l28 2s infinite;
 }
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  background: repeating-conic-gradient(#0000 0 35deg,currentColor 0 90deg);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
+  border-radius: 50%;
 }
-
+.loader::after {
+  margin: 20%;
+}
+@keyframes l28 {
+  100% {transform: rotate(1turn)}
+} */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  color: #514b82;
+  background: 
+    conic-gradient(from 90deg at 3px 3px,#0000 90deg,currentColor 0)
+    -3px -3px/calc(50% + 1.5px) calc(50% + 1.5px);
+  animation: l28 2s infinite;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  background: repeating-conic-gradient(#0000 0 35deg,currentColor 0 90deg);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
+  border-radius: 50%;
+}
+.loader::after {
+  margin: 20%;
+}
+@keyframes l28 {
+  100% {transform: rotate(1turn)}
+}
 .calculator {
     width: 90%;
     max-width: 400px;
