@@ -6,7 +6,7 @@ window.onload = function () {
         document.getElementById('loading-screen').style.display = 'none';
         document.getElementById('calculator').style.display = 'block';
         generateUserId();
-    }, 2000);
+    }, 4000);
 };
 
 function append(value) {
