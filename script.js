@@ -77,10 +77,10 @@ function showDeveloperInfo() {
 function customInfo() {
     alert("Open Source Acal1.0\nCommands:\n1. 2323 to see developer info\n2. 7789 to open Google\n3. 19 for open AI\nCommands are triggered when '=' is pressed.");
 }
+
 function functionai() {
     window.open("https://forms.gle/ovEJ5o3UxnfcVbwT6");
 }
-
 
 function showFunction() {
     const popup = document.createElement('div');
@@ -105,25 +105,4 @@ function closePopup(button) {
 function generateUserId() {
     const userId = 'User-' + Math.floor(Math.random() * 1000000);
     userIdElement.innerText = `Your Unique ID: ${userId}`;
-}
-
-// Radial menu for brackets
-function openBracketDial() {
-    const dial = document.createElement('div');
-    dial.className = 'dial';
-    dial.innerHTML = `
-        <button onclick="append('(')">(</button>
-        <button onclick="append(')')">)</button>
-        <button onclick="append('[')">[</button>
-        <button onclick="append(']')">]</button>
-        <button onclick="append('{')">{</button>
-        <button onclick="append('}')">}</button>
-        <button class='close-btn' onclick="closeDial(this)">Close</button>
-    `;
-    document.body.appendChild(dial);
-}
-
-function closeDial(button) {
-    const dial = button.parentElement;
-    document.body.removeChild(dial);
 }
